@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasar & Berita Finansial - Investing Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="container flex-between">
+            <div class="logo-area">
+                <a href="/" class="logo">Investing<span>.com</span></a>
+                <span class="edition-flag">ID</span>
+            </div>
+            <div class="search-area">
+                <input type="text" placeholder="Cari Saham, Berita...">
+                <button>Cari</button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li class="active"><a href="#">Berita</a></li>
+                <li><a href="#">Pasar</a></li>
+                <li><a href="#">Saham</a></li>
+                <li><a href="#">Kripto</a></li>
+                <li><a href="#">Teknikal</a></li>
+                <li><a href="#">Analisis</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="sub-header">
+        <div class="container">
+            <h1>Berita Utama</h1>
+            <div class="breadcrumb">Berita > Berita Utama > Indonesia</div>
+        </div>
+    </div>
+
+    <div class="container main-layout">
+        
+        <main class="content-col">
+            <div class="section-header">
+                <h2>Berita Terkini</h2>
+                <div class="filters">
+                    <span class="active">Semua</span>
+                    <span>Paling Populer</span>
+                </div>
+            </div>
+
+            <div id="loading-spinner" class="loading">
+                <div class="spinner"></div>
+                <p>Memuat berita pasar...</p>
+            </div>
+
+            <div id="news-container" class="news-feed">
+                </div>
+        </main>
+
+        <aside class="sidebar-col">
+            <div class="widget">
+                <div class="widget-header">
+                    <h3>Analisis Tren</h3>
+                </div>
+                <div class="market-list">
+                    <div class="market-item">
+                        <span class="pair">IHSG</span>
+                        <span class="price up">7.200,50</span>
+                        <span class="change up">+0,45%</span>
+                    </div>
+                    <div class="market-item">
+                        <span class="pair">USD/IDR</span>
+                        <span class="price down">15.500</span>
+                        <span class="change down">-0,10%</span>
+                    </div>
+                    <div class="market-item">
+                        <span class="pair">BTC/USD</span>
+                        <span class="price up">52.100</span>
+                        <span class="change up">+1,20%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widget">
+                <div class="widget-header">
+                    <h3>Berita Pilihan</h3>
+                </div>
+                <div id="trending-container" class="trending-list">
+                    </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Investing Clone. Data provided by CNN Indonesia Scraper.</p>
+            <p class="disclaimer">Peringatan Resiko: Perdagangan instrumen finansial mengandung risiko tinggi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
